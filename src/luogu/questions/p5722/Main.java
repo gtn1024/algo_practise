@@ -1,5 +1,5 @@
 // https://www.luogu.com.cn/problem/P5722
-package luogu.questions.p5725.p5722;
+package luogu.questions.p5722;
 
 import java.util.Scanner;
 

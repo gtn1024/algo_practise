@@ -1,5 +1,5 @@
 // https://www.luogu.com.cn/problem/P5726
-package luogu.questions.p5725.p5726;
+package luogu.questions.p5726;
 
 import java.util.ArrayList;
 import java.util.Comparator;
