@@ -1,3 +1,7 @@
 .idea/
+.vscode
 out/
 *.iml
+*.class
+*.o
+*.o.*/
