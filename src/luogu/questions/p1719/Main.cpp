@@ -4,7 +4,6 @@ using namespace std;
 
 int arr[121][121];
 
-// TODO: 4WA
 int main() {
   int n, tmp;
   cin >> n;
@@ -25,13 +24,16 @@ int main() {
   //   cout << endl;
   // }
 
+  // cout << "----" << endl;
+
   for (int a1 = 1; a1 < n + 1; a1++) {
     for (int a2 = 1; a2 < n + 1; a2++) {
       // (a1, a2) 左上
       for (int b1 = a1 + 1; b1 < n + 1; b1++) {
         for (int b2 = a2 + 1; b2 < n + 1; b2++) {
           // (b1, b2) 右下
-          tmp = arr[b1][b2] - arr[a1 - 1][b2] - arr[b1][a2 - 1];
+          tmp = arr[b1][b2] - arr[a1 - 1][b2] - arr[b1][a2 - 1] +
+                arr[a1 - 1][a2 - 1];
           if (tmp > max) {
             max = tmp;
           }
