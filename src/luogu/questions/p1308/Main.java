@@ -1,31 +1,38 @@
+// https://www.luogu.com.cn/problem/P1308
 package luogu.questions.p1308;
 
 import java.util.Scanner;
 
-// TODO: StringIndexOutOfBoundsException
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine().toLowerCase();
-        String line = sc.nextLine();
-        String[] arr = line.split(" ");
-        int index = -1;
-        int count = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (s.equals(arr[i].toLowerCase())) {
-                if (index < 0) {
-                    index = line.indexOf(arr[i].toLowerCase());
-                    while (line.charAt(index - 1) != ' ' && line.charAt(index + s.length()) != ' ') {
-                        index = line.indexOf(arr[i].toLowerCase(), index + 1);
-                    }
-
-                }
-                count++;
+        String word = sc.nextLine().toLowerCase();
+        String sentence = sc.nextLine().toLowerCase();
+        String[] words = sentence.split(" ");
+        int i = -1;
+        while (true) {
+            i = sentence.indexOf(word, i + 1);
+            if (i == -1)
+                break;
+            if (i > 0 && sentence.charAt(i - 1) != ' ') {
+                continue;
             }
+            if (i < sentence.length() && sentence.charAt(i + word.length()) != ' ') {
+                continue;
+            }
+            break;
         }
-        if (count > 0)
-            System.out.println(count + " " + index);
-        else
-            System.out.println("-1");
+
+        if (i < 0) {
+            System.out.println(i);
+            return;
+        }
+
+        int count = 0;
+        for (String string : words) {
+            if (string.equals(word))
+                count++;
+        }
+        System.out.println(count + " " + i);
     }
 }

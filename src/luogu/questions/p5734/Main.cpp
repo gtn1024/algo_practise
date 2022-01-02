@@ -34,12 +34,7 @@ int main() {
 
     case 4:
       cin >> ss;
-      int t = s.find(ss);
-      if (t < 100 && t >= 0)
-        cout << t << endl;
-      else
-        cout << -1 << endl;
-      // cout << (t < 100 && t >= 0) ? t : -1 << endl;
+      cout << (int)s.find(ss) << endl;
       break;
     }
   }
