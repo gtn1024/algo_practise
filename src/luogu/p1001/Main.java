@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1001
 package luogu.p1001;
 
 import java.util.Scanner;

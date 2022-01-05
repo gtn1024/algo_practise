@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1000
 package luogu.p1000;
 
 public class Main {
