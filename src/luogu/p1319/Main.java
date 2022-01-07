@@ -14,20 +14,10 @@ public class Main {
         }
         int flag = 0;
         for (int i = 0; i < ls.size(); i++) {
-            if (i % 2 == 0) {
-                // print 0
-                for (int j = 0; j < ls.get(i); j++) {
-                    System.out.print(0);
-                    if (++flag % n == 0)
-                        System.out.println();
-                }
-            } else {
-                // print 1
-                for (int j = 0; j < ls.get(i); j++) {
-                    System.out.print(1);
-                    if (++flag % n == 0)
-                        System.out.println();
-                }
+            for (int j = 0; j < ls.get(i); j++) {
+                System.out.print(i % 2 == 0 ? 0 : 1);
+                if (++flag % n == 0)
+                    System.out.println();
             }
         }
     }

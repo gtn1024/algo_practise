@@ -1,3 +1,4 @@
+// https://www.luogu.com.cn/problem/P1427
 package luogu.p1427;
 
 import java.util.ArrayList;
