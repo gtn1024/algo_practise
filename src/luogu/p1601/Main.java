@@ -1,7 +1,7 @@
 // https://www.luogu.com.cn/problem/P1601
 package luogu.p1601;
 
-import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Main {
@@ -9,6 +9,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String a = sc.nextLine();
         String b = sc.nextLine();
-        System.out.println(new BigDecimal(a).add(new BigDecimal(b)));
+        System.out.println(new BigInteger(a).add(new BigInteger(b)));
     }
 }
