@@ -16,6 +16,16 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "type": "shell",
+      "label": "Go dlv",
+      "command": "~/go/bin/dlv",
+      "args": ["debug", "--headless", "--listen=:2345", "--api-version=2", "${file}"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
