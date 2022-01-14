@@ -1,4 +1,4 @@
-package pta_2022.p5;
+package contest.pta.pta_2022.p5;
 
 import java.util.Scanner;
 

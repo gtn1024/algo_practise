@@ -1,5 +1,5 @@
 // https://www.luogu.com.cn/problem/P1093
-package luogu.p1099;
+package luogu.p1093;
 
 import java.util.Arrays;
 import java.util.Scanner;
