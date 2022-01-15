@@ -17,11 +17,11 @@
       "console": "integratedTerminal"
     },
     {
-      "name": "lldb: Launch",
+      "name": "lldb: Clang++ Launch and Debug",
       "type": "lldb",
       "request": "launch",
       "program": "${fileDirname}/${fileBasenameNoExtension}.o",
-      "args": []
+      "preLaunchTask": "clang++ build active file"
     }
   ]
 }
