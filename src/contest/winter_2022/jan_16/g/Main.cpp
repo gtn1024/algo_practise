@@ -1,3 +1,4 @@
+// https://nanti.jisuanke.com/t/A2240
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
