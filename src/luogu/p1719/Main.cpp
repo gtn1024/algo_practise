@@ -14,17 +14,8 @@ int main() {
       arr[i][j] = arr[i - 1][j] + arr[i][j - 1] + tmp - arr[i - 1][j - 1];
     }
   }
-  // cout << "----" << endl;
+
   int max = 0;
-
-  // for (int i = 1; i <= n; i++) {
-  //   for (int j = 1; j <= n; j++) {
-  //     cout << arr[i][j] << " ";
-  //   }
-  //   cout << endl;
-  // }
-
-  // cout << "----" << endl;
 
   for (int a1 = 1; a1 < n + 1; a1++) {
     for (int a2 = 1; a2 < n + 1; a2++) {
