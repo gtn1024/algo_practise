@@ -4,30 +4,6 @@ using namespace std;
 typedef struct {
   int a, b, c, d;
 } sss;
-bool cmp(sss a, sss b) {
-  if (a.a > b.a) {
-    return false;
-  } else if (a.a < b.a) {
-    return true;
-  } else {
-    if (a.b > b.b) {
-      return false;
-    } else if (a.b < b.b) {
-      return true;
-    } else {
-      if (a.c > b.c) {
-        return false;
-      } else if (a.c < b.c) {
-        return true;
-      } else {
-        if (a.d > b.d) {
-          return false;
-        }
-        return true;
-      }
-    }
-  }
-}
 int main() {
   int n;
   cin >> n;
@@ -52,7 +28,30 @@ int main() {
       }
     }
   }
-  sort(ssss, ssss + count, cmp);
+  sort(ssss, ssss + count, [](sss a, sss b) {
+    if (a.a < b.a) {
+      return true;
+    } else if (a.a > b.a) {
+      return false;
+    } else {
+      if (a.b < b.b) {
+        return true;
+      } else if (a.b > b.b) {
+        return false;
+      } else {
+        if (a.c < b.c) {
+          return true;
+        } else if (a.c > b.c) {
+          return false;
+        } else {
+          if (a.d < b.d) {
+            return true;
+          }
+          return false;
+        }
+      }
+    }
+  });
   for (int i = 0; i < count; i++) {
     printf("Cube = %i, Triple = (%i,%i,%i)\n", ssss[i].a, ssss[i].b, ssss[i].c,
            ssss[i].d);
