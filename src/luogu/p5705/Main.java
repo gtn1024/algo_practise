@@ -13,5 +13,6 @@ public class Main {
             sb.append(chars[i]);
         }
         System.out.println(sb);
+        scanner.close();
     }
 }

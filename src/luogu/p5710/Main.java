@@ -10,6 +10,7 @@ public class Main {
         System.out.println((a(i) && b(i) ? "1" : "0") + " " + (a(i) || b(i) ? "1" : "0") + " "
                 + ((a(i) && !b(i)) || (!a(i) && b(i)) ? "1" : "0") + " "
                 + (!a(i) && !b(i) ? "1" : "0"));
+        sc.close();
     }
 
     public static boolean a(int i) {

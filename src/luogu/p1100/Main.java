@@ -14,5 +14,6 @@ public class Main {
     }
     String s2 = sb.substring(16) + sb.substring(0, 16);
     System.out.println(Long.valueOf(s2, 2));
+    sc.close();
   }
 }

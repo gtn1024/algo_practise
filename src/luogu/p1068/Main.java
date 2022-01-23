@@ -48,5 +48,6 @@ public class Main {
     for (int i = 0; i < act; i++) {
       System.out.printf("%d %d\n", ps[i].k, ps[i].s);
     }
+    sc.close();
   }
 }

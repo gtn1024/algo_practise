@@ -14,5 +14,6 @@ public class Main {
         }
         Arrays.sort(a);
         System.out.println(a[0]);
+        scanner.close();
     }
 }

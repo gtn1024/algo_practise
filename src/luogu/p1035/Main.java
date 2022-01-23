@@ -14,5 +14,6 @@ public class Main {
             s += 1.0 / n;
         }
         System.out.println(n);
+        sc.close();
     }
 }

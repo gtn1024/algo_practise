@@ -18,6 +18,7 @@ public class Main {
         for (Integer l : ls) {
             System.out.print(l + " ");
         }
+        sc.close();
     }
 
     public static boolean isLeap(int i) {

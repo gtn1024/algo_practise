@@ -10,5 +10,6 @@ public class Main {
         int b = scanner.nextInt();
 
         System.out.println(a + b);
+        scanner.close();
     }
 }

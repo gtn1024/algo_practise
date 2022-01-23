@@ -11,6 +11,7 @@ public class Main {
             if (isPrime(a))
                 System.out.print(a + " ");
         }
+        sc.close();
     }
 
     public static boolean isPrime(int i) {

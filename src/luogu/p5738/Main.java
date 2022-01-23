@@ -34,6 +34,7 @@ public class Main {
                 max = ave;
         }
         System.out.printf("%.2f", max);
+        sc.close();
     }
 
     public static double ave(int[] array) {

@@ -41,5 +41,6 @@ public class Main {
                 ii = 0;
             }
         }
+        sc.close();
     }
 }

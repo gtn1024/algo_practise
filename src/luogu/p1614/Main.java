@@ -23,5 +23,6 @@ public class Main {
                 min = tmp;
         }
         System.out.println(min);
+        sc.close();
     }
 }

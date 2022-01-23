@@ -13,5 +13,6 @@ public class Main {
 
         int allMin = (c - a - 1) * 60 + (60 - b) + d;
         System.out.println(allMin / 60 + " " + allMin % 60);
+        scanner.close();
     }
 }

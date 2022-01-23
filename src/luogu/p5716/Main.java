@@ -30,6 +30,7 @@ public class Main {
                 break;
         }
         System.out.println(res);
+        sc.close();
     }
 
     public static boolean isLeap(int i) {

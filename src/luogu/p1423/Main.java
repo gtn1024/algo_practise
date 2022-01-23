@@ -16,5 +16,6 @@ public class Main {
             s *= 0.98;
         }
         System.out.println(i);
+        sc.close();
     }
 }

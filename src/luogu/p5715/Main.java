@@ -15,5 +15,6 @@ public class Main {
         for (Integer integer : integers) {
             System.out.print(integer + " ");
         }
+        sc.close();
     }
 }

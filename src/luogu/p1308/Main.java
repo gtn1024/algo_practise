@@ -22,7 +22,7 @@ public class Main {
             }
             break;
         }
-
+        sc.close();
         if (i < 0) {
             System.out.println(i);
             return;
@@ -34,5 +34,6 @@ public class Main {
                 count++;
         }
         System.out.println(count + " " + i);
+
     }
 }

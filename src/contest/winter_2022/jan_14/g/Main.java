@@ -9,6 +9,7 @@ public class Main {
     int y = sc.nextInt();
     int w = sc.nextInt();
     int max = Math.max(y, w);
+    sc.close();
     if (max == 1) {
       System.out.println("1/1");
       return;
@@ -16,6 +17,7 @@ public class Main {
     int c = 7 - max;
     int gcd = gcd(c, 6);
     System.out.println(c / gcd + "/" + 6 / gcd);
+
   }
 
   public static int gcd(int a, int b) {

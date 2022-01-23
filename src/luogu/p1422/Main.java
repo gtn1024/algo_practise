@@ -19,5 +19,6 @@ public class Main {
             money += i * 0.4463;
         }
         System.out.printf("%.1f\n", money);
+        sc.close();
     }
 }

@@ -13,5 +13,6 @@ public class Main {
             i++;
         }
         System.out.println(i);
+        sc.close();
     }
 }

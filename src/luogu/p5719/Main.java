@@ -20,6 +20,7 @@ public class Main {
             }
         }
         System.out.printf("%.1f %.1f%n", a(a), a(b));
+        sc.close();
     }
 
     public static double a(List<Integer> ls) {

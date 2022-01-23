@@ -15,5 +15,6 @@ public class Main {
         }
         list.sort(Comparator.naturalOrder());
         System.out.println(list.get(list.size() - 1) - list.get(0));
+        sc.close();
     }
 }

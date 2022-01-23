@@ -23,6 +23,7 @@ public class Main {
             }
         }
         System.out.println(s);
+        sc.close();
     }
 
     public static int getMax() {

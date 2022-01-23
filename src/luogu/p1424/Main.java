@@ -17,5 +17,6 @@ public class Main {
             sum += 250;
         }
         System.out.println(sum);
+        sc.close();
     }
 }

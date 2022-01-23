@@ -18,5 +18,6 @@ public class Main {
         if (hour < 0)
             hour += 24;
         System.out.println((hour < 10 ? "0" + hour : hour) + ":" + (min < 10 ? "0" + min : min));
+        sc.close();
     }
 }

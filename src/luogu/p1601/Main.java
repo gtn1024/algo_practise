@@ -10,5 +10,6 @@ public class Main {
         String a = sc.nextLine();
         String b = sc.nextLine();
         System.out.println(new BigInteger(a).add(new BigInteger(b)));
+        sc.close();
     }
 }

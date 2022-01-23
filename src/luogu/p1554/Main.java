@@ -17,5 +17,6 @@ public class Main {
         for (int re : res) {
             System.out.print(re + " ");
         }
+        sc.close();
     }
 }

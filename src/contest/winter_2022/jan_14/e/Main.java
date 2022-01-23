@@ -60,8 +60,8 @@ public class Main {
       }
     });
     for (S s : ls) {
-      System.out.printf("Cube = %d, Triple = (%d,%d,%d)\n",
-          s.a, s.b, s.c, s.d);
+      System.out.printf("Cube = %d, Triple = (%d,%d,%d)\n", s.a, s.b, s.c, s.d);
     }
+    sc.close();
   }
 }

@@ -29,5 +29,6 @@ public class Main {
         for (int i = 6; i > 0; i--) {
             System.out.print(res[i] + " ");
         }
+        sc.close();
     }
 }

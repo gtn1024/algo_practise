@@ -10,6 +10,7 @@ public class Main {
         int d = sc.nextInt();
         f(d);
         System.out.println(c);
+        sc.close();
     }
 
     public static void f(int n) {

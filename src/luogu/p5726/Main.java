@@ -20,5 +20,6 @@ public class Main {
         }
         double res = sum / (list.size() - 2) + 0.005;
         System.out.printf("%.2f%n", res);
+        sc.close();
     }
 }

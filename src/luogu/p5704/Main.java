@@ -9,5 +9,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         char[] chars = scanner.nextLine().toCharArray();
         System.out.println((char) (chars[0] - 32));
+        scanner.close();
     }
 }

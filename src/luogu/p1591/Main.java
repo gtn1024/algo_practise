@@ -18,6 +18,7 @@ public class Main {
       }
       System.out.println(cc);
     }
+    sc.close();
   }
 
   public static BigInteger f(int n) {

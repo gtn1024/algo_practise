@@ -10,5 +10,6 @@ public class Main {
         int local = 5 * i;
         int lg = 11 + 3 * i;
         System.out.println(local < lg ? "Local" : "Luogu");
+        sc.close();
     }
 }

@@ -13,6 +13,7 @@ public class Main {
             res = res.add(f(i));
         }
         System.out.println(res);
+        sc.close();
     }
 
     public static BigInteger f(int i) {

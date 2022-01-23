@@ -19,5 +19,6 @@ public class Main {
     if (neg)
       System.out.print("-");
     System.out.println(Integer.parseInt(sb.toString()));
+    sc.close();
   }
 }

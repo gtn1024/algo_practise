@@ -11,5 +11,6 @@ public class Main {
         double p = t / n;
         System.out.printf("%.3f\n", p);
         System.out.println(2 * n);
+        sc.close();
     }
 }

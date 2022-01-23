@@ -12,6 +12,7 @@ public class Main {
         }
         System.out.printf("%.2f", d(a[0][0], a[0][1], a[1][0], a[1][1])
                 + d(a[0][0], a[0][1], a[2][0], a[2][1]) + d(a[1][0], a[1][1], a[2][0], a[2][1]));
+        sc.close();
     }
 
     public static double d(double x1, double y1, double x2, double y2) {

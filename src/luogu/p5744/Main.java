@@ -27,5 +27,6 @@ public class Main {
         for (int i = 0; i < n; i++) {
             System.out.println(new S(sc.next(), sc.nextInt(), sc.nextInt()));
         }
+        sc.close();
     }
 }

@@ -12,5 +12,6 @@ public class Main {
 
     int i = Integer.valueOf(t, n);
     System.out.println(Integer.toString(i, n2).toUpperCase());
+    sc.close();
   }
 }

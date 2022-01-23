@@ -18,6 +18,7 @@ public class Main {
                 break;
             }
         }
+        sc.close();
     }
 
     public static boolean isPrime(int n) {

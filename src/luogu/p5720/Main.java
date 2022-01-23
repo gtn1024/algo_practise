@@ -13,5 +13,6 @@ public class Main {
             c++;
         }
         System.out.println(c);
+        sc.close();
     }
 }

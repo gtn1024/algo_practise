@@ -9,5 +9,6 @@ public class Main {
         int a = sc.nextInt();
         int p = sc.nextInt();
         System.out.println(a * p);
+        sc.close();
     }
 }

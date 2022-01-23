@@ -12,5 +12,6 @@ public class Main {
             sum += i;
         }
         System.out.println(sum);
+        sc.close();
     }
 }

@@ -41,5 +41,6 @@ public class Main {
       System.out.print(integer);
     }
     System.out.println();
+    sc.close();
   }
 }

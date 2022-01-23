@@ -9,5 +9,6 @@ public class Main {
         int xc = sc.nextInt();
         int qm = sc.nextInt();
         System.out.println((int) (zy * 0.2 + xc * 0.3 + qm * 0.5));
+        sc.close();
     }
 }

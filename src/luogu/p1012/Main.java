@@ -20,5 +20,6 @@ public class Main {
     for (int integer : ls) {
       System.out.print(integer);
     }
+    sc.close();
   }
 }

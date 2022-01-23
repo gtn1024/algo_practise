@@ -19,6 +19,7 @@ public class Main {
                 System.out.print(" ");
         }
         System.out.println();
+        sc.close();
     }
 
     public static int o(int i) {

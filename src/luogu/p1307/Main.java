@@ -7,6 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int i = sc.nextInt();
+        sc.close();
         if (i == 0) {
             System.out.println(0);
             return;
@@ -27,5 +28,6 @@ public class Main {
             }
             System.out.print(chars[j]);
         }
+
     }
 }

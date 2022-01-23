@@ -16,5 +16,6 @@ public class Main {
       f[i] = f[i - 1].add(f[i - 2]);
     }
     System.out.println(f[n]);
+    scanner.close();
   }
 }

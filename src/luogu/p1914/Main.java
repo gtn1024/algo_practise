@@ -15,5 +15,6 @@ public class Main {
             sb.append(nC);
         }
         System.out.println(sb);
+        sc.close();
     }
 }

@@ -35,5 +35,6 @@ public class Main {
         index -= n;
     }
     System.out.println(rs[index].zy);
+    sc.close();
   }
 }

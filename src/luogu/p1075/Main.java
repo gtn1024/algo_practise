@@ -16,6 +16,7 @@ public class Main {
             i++;
         } while (j * (i - 1) != mul);
         System.out.println(Math.max(i, j));
+        sc.close();
     }
 
     public static boolean isPrime(int n) {

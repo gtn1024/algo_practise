@@ -31,5 +31,6 @@ public class Main {
             }
         }
         System.out.println(ps[maxI].name + " " + ps[maxI].a + " " + ps[maxI].b + " " + ps[maxI].c);
+        sc.close();
     }
 }

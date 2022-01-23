@@ -30,7 +30,7 @@ public class Main {
             System.out.println("No Answer");
             System.out.println(0);
         }
-
+        sc.close();
     }
 
     public static boolean isPrime(int i) {
