@@ -4,31 +4,31 @@
 #include <string>
 using namespace std;
 
-typedef struct {
+typedef struct student {
   int num;
   int chi, mat, eng;
   int sum;
-} student;
 
-bool cmp(student a, student b) {
-  if (a.sum > b.sum) {
-    return true;
-  } else if (a.sum < b.sum) {
-    return false;
-  } else {
-    if (a.chi > b.chi) {
+  bool operator<(const student& b) {
+    if (sum > b.sum) {
       return true;
-    } else if (a.chi < b.chi) {
+    } else if (sum < b.sum) {
       return false;
     } else {
-      if (a.num < b.num) {
+      if (chi > b.chi) {
         return true;
-      } else {
+      } else if (chi < b.chi) {
         return false;
+      } else {
+        if (num < b.num) {
+          return true;
+        } else {
+          return false;
+        }
       }
     }
   }
-}
+} student;
 
 int main() {
   int n;
@@ -39,7 +39,7 @@ int main() {
     cin >> s[i].chi >> s[i].mat >> s[i].eng;
     s[i].sum = s[i].chi + s[i].mat + s[i].eng;
   }
-  sort(s, s + n, cmp);
+  sort(s, s + n);
   for (int i = 0; i < 5; i++) {
     cout << s[i].num << ' ' << s[i].sum << endl;
   }

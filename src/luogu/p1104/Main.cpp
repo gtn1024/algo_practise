@@ -4,37 +4,37 @@
 #include <string>
 using namespace std;
 
-typedef struct {
+typedef struct student {
   int id;
   string name;
   int y, m, d;
-} student;
 
-bool cmp(student a, student b) {
-  if (a.y > b.y) {
-    return false;
-  } else if (a.y < b.y) {
-    return true;
-  } else {
-    if (a.m > b.m) {
+  bool operator<(const student& b) const {
+    if (y > b.y) {
       return false;
-    } else if (a.m < b.m) {
+    } else if (y < b.y) {
       return true;
     } else {
-      if (a.d > b.d) {
+      if (m > b.m) {
         return false;
-      } else if (a.d < b.d) {
+      } else if (m < b.m) {
         return true;
       } else {
-        if (a.id < b.id) {
+        if (d > b.d) {
           return false;
-        } else {
+        } else if (d < b.d) {
           return true;
+        } else {
+          if (id < b.id) {
+            return false;
+          } else {
+            return true;
+          }
         }
       }
     }
   }
-}
+} student;
 
 int main() {
   int n;
@@ -44,7 +44,7 @@ int main() {
     s[i].id = i + 1;
     cin >> s[i].name >> s[i].y >> s[i].m >> s[i].d;
   }
-  sort(s, s + n, cmp);
+  sort(s, s + n);
   for (int i = 0; i < n; i++) {
     cout << s[i].name << endl;
   }
