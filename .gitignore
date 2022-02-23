@@ -10,3 +10,6 @@ temp
 *.jar
 __debug_bin
 *.exe*
+/bin/
+.classpath
+.project
