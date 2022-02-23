@@ -1,6 +1,7 @@
 .idea/
 .vscode/
 out/
+temp
 *.iml
 *.class
 *.o
