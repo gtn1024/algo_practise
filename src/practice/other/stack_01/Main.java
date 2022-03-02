@@ -16,7 +16,7 @@ public class Main {
       int j = 1;
       for (int i = 1; i <= n; i++) {
         st.push(i);
-        while (!st.isEmpty() && a[j] == st.getFirst()) {
+        while (!st.isEmpty() && a[j] == st.peek()) {
           st.pop();
           j++;
         }
