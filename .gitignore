@@ -13,3 +13,4 @@ __debug_bin
 /bin/
 .classpath
 .project
+.settings/
